@@ -1,3 +1,20 @@
+<?php
+
+$servername = "localhost";
+$username = "u466486587_user_ip";
+$password ="tapa7866@A";
+$dbname = "u466486587_user_ip";
+
+$ip = $_SERVER['REMOTE_ADDR']; //Get ip address
+$device_id = $_SERVER['HTTP_USER_AGENT']; // Get device details
+
+$database_conn =mysqli_connect($servername, $username, $password, $dbname);
+
+$data = "INSERT INTO `user_ip` (`user_ip_add`, `device`) VALUES ('$ip', '$device_id');";
+$data_submit = mysqli_query($database_conn, $data);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +29,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="./gravity_logo_bg_none.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/09cca66df7.js" crossorigin="anonymous"></script>
-    <title>team Gravity</title>
+    <title>ᵀᵉᵃᵐ 𝙶𝚁𝙰𝚅𝙸𝚃𝚈</title>
     <style>
         @media only screen and (max-width: 1900px) and (min-width: 500px) {
             .bottom_mob {
@@ -238,7 +255,7 @@
                     class="facebook"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/teamgravity07/" target="_blank" class="facebook"><i
                         class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/team-gravity/" target="_blank" class="facebook"><i class="fa-brands fa-linkedin"></i></a>
+                <!--<a href="https://www.linkedin.com/in/team-gravity/" target="_blank" class="facebook"><i class="fa-brands fa-linkedin"></i></a>-->
             </p>
         </div>
         <div class="made_by">
@@ -254,7 +271,7 @@
                     class="facebook_mob"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/teamgravity07/" target="_blank" class="facebook_mob"><i
                         class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="facebook_mob"><i class="fa-brands fa-linkedin"></i></a>
+                <!--<a href="#" class="facebook_mob"><i class="fa-brands fa-linkedin"></i></a>-->
             </p>
         </div>
         <div class="made_by_mob">
