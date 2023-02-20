@@ -265,6 +265,9 @@ $data_submit = mysqli_query($database_conn, $data);
     </footer>
 
     <footer class="bottom_mob">
+        <div class="privacy-policy">
+            <a href="./privacy-policy.html" target="_blank" class="policy">Privacy Policy</a>
+        </div>
         <div class="social_icon_mob">
             <p class="s_mob">
                 <a href="https://www.facebook.com/profile.php?id=100090000143646&mibextid=ZbWKwL" target="_blank"
